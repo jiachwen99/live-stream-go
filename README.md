@@ -1,1 +1,1 @@
-# live-stream-go
+An app that build to do live stream using GoLang
