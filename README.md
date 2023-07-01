@@ -1,1 +1,2 @@
-An app that build to do live stream using GoLang
+# Live Stream App
+This project is built with NextJS, GoLang, Kubernetes.
