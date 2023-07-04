@@ -14,12 +14,8 @@ func main() {
 
 	router := chi.NewRouter()
 	router.Use(middleware.Logger)
-	router.Get("/", func(w http.ResponseWriter, r *http.Request) {
-		_, err := w.Write([]byte("Hello World!"))
-		if err != nil {
-			log.Println("Error Warning : ", err)
-		}
-	})
+
+	//Initialize Server
 	err := http.ListenAndServe(":3000", router)
 	if err != nil {
 		log.Println("Fail Server : ", err)
